@@ -7,13 +7,21 @@
 <body>
  <script>
      let arr = [1,2,5,8,7];
-     function insertNumberToArray(x, i) {
+     function insertNumberToArray(x, index) {
          let newArr = [];
-        if (i > 0 && i <= arr.length){
-            for()
+        if (index > 0 && index <= arr.length){
+            for (let i = 0; i < arr.length; i++) {
+                if (i !== 0) {
+                    newArr.push(arr[i]);
+                } else {
+                    newArr.push(x);
+                    newArr.push(arr[i]);
+                }
+            }
         } else {
-
+            document.write(arr);
         }
+        document.write(newArr);
      }
 
      insertNumberToArray();
