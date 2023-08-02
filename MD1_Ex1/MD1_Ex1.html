@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,6,5,4];
+        let sum = 0;
+        let ave = 0;
+        function findAvg() {
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            ave = sum / arr.length;
+            return ave;
+        }
+        findAvg()
+        document.write(ave);
+    </script>
+</body>
+</html>
